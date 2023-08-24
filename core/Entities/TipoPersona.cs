@@ -3,5 +3,5 @@ namespace core.Entities;
     {
         public int IdTipoPersona { get; set; }
         public string Descripcion { get; set; }
-        public ICollection<TipoPersona> Personas { get; set;}
+        public ICollection<Persona> Personas { get; set;}
     }
