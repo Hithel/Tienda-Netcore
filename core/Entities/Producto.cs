@@ -1,7 +1,10 @@
 
+using System.ComponentModel.DataAnnotations;
+
 namespace core.Entities;
     public class Producto
     {
+        [Key]
         public int Id { get; set; }
         public string CodInterno { get; set; }
         public string NombreProducto { get; set; }

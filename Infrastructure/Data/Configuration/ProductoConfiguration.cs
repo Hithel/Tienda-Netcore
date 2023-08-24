@@ -15,7 +15,7 @@ namespace Infrastructure.Data.Configuration
             .HasMaxLength(3);
 
             builder.Property(P => P.CodInterno)
-            .HasColumnType("int");
+            .HasColumnType("text");
 
             builder.Property(P => P.NombreProducto)
             .IsRequired()

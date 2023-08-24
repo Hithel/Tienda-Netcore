@@ -1,7 +1,10 @@
 
+using System.ComponentModel.DataAnnotations;
+
 namespace core.Entities;
     public class Persona
     {
+        [Key]
         public int Id { get; set; }
         public string NombrePersona { get; set; }
         public DateOnly FechaNacimiento { get; set; }
