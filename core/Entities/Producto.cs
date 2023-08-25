@@ -2,10 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace core.Entities;
-    public class Producto
+    public class Producto : BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
         public string CodInterno { get; set; }
         public string NombreProducto { get; set; }
         public int StockMin { get; set; }

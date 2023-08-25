@@ -2,6 +2,7 @@ using core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 namespace Infrastructure.Data.Configuration;
     public class PaisConfiguration : IEntityTypeConfiguration<Pais>
     {
@@ -9,7 +10,7 @@ namespace Infrastructure.Data.Configuration;
         {
             builder.ToTable("Pais");
 
-            builder.Property(p => p.IdPais)
+            builder.Property(p => p.Id)
             .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
             .HasMaxLength(3);
 

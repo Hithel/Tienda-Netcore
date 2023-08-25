@@ -9,6 +9,10 @@ namespace Infrastructure.Data.Configuration;
         {
             builder.ToTable("ProductoPersona");
 
+            builder.Property(PP => PP.Id)
+            .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
+            .HasMaxLength(3);
+
             builder.HasOne(PP => PP.Persona)
             .WithMany(PP => PP.ProductoPersonas)
             .HasForeignKey(PP => PP.IdPersonaFk);

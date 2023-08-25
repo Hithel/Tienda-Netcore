@@ -2,10 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace core.Entities;
-    public class Persona
+    public class Persona : BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
         public string NombrePersona { get; set; }
         public DateOnly FechaNacimiento { get; set; }
         public string EmailPersona { get; set; }

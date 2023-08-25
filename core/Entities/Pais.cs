@@ -2,10 +2,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace core.Entities;
 
-    public class Pais
+    public class Pais : BaseEntity
     {
-        [Key]
-        public int IdPais { get; set; }
         public string NombrePais { get; set; }
         public ICollection<Estado> Estados {get; set; }
     }
