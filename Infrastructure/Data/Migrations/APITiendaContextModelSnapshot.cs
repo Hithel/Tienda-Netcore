@@ -45,7 +45,7 @@ namespace Infrastructure.Data.Migrations
 
             modelBuilder.Entity("core.Entities.Pais", b =>
                 {
-                    b.Property<int>("IdPais")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(3)
                         .HasColumnType("int")
@@ -56,7 +56,7 @@ namespace Infrastructure.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.HasKey("IdPais");
+                    b.HasKey("Id");
 
                     b.ToTable("Pais", (string)null);
                 });
@@ -89,9 +89,6 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("varchar(50)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("EmailPersona")
-                        .IsUnique();
 
                     b.HasIndex("IdRegionFK");
 
@@ -141,11 +138,14 @@ namespace Infrastructure.Data.Migrations
                     b.Property<int>("IdProductoFk")
                         .HasColumnType("int");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.HasKey("IdPersonaFk", "IdProductoFk");
 
                     b.HasIndex("IdProductoFk");
 
-                    b.ToTable("ProductoPersona", (string)null);
+                    b.ToTable("ProductoPersonas");
                 });
 
             modelBuilder.Entity("core.Entities.Region", b =>
@@ -173,16 +173,20 @@ namespace Infrastructure.Data.Migrations
 
             modelBuilder.Entity("core.Entities.TipoPersona", b =>
                 {
-                    b.Property<int>("IdTipoPersona")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasMaxLength(3)
+                        .HasColumnType("int")
+                        .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Descripcion")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
-                    b.HasKey("IdTipoPersona");
+                    b.HasKey("Id");
 
-                    b.ToTable("TipoPersonas");
+                    b.ToTable("TipoPersona", (string)null);
                 });
 
             modelBuilder.Entity("core.Entities.Estado", b =>

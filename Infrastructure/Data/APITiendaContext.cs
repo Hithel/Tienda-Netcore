@@ -17,10 +17,8 @@ namespace Infrastructure.Data
         public DbSet<Producto> Productos { get; set; }
         public DbSet<ProductoPersona> ProductoPersonas { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Persona>().HasIndex(idx => idx.EmailPersona).IsUnique();
-            modelBuilder.Entity<ProductoPersona>().HasKey(r => new {r.IdPersonaFk,r.IdProductoFk});
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }

@@ -2,12 +2,14 @@
 
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddApplicationServices();
 builder.Services.AddDbContext<APITiendaContext>(OptionsBuilder =>
 {
     string ? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

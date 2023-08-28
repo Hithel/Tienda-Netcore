@@ -11,5 +11,6 @@ namespace core.Entities;
         public TipoPersona TipoPersona { get; set; }
         public int IdRegionFK { get; set; }
         public Region Region { get; set; }
+        public ICollection<Producto> Productos { get; set; } = new HashSet<Producto>();
         public ICollection<ProductoPersona> ProductoPersonas { get; set; }
     }

@@ -32,5 +32,23 @@ namespace Infrastructure.Data.Configuration;
             .WithMany(P => P.Personas)
             .HasForeignKey(P => P.IdRegionFK);
 
+            builder
+            .HasMany(p => p.Productos)
+            .WithMany(p => p.Personas)
+            .UsingEntity<ProductoPersona>(
+                j => j
+                    .HasOne(pt => pt.Producto)
+                    .WithMany(t => t.ProductoPersonas)
+                    .HasForeignKey(pt => pt.IdProductoFk),
+                j => j
+                    .HasOne(pt => pt.Persona)
+                    .WithMany(t => t.ProductoPersonas)
+                    .HasForeignKey(pt => pt.IdPersonaFk),
+                j =>
+                {
+                    j.HasKey(t => new { t.IdPersonaFk, t.IdProductoFk});
+                }
+            );
+
         }
     }

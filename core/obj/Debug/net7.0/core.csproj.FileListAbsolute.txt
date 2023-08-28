@@ -10,3 +10,14 @@
 /home/apolT01-044/Documents/tienda/core/obj/Debug/net7.0/refint/core.dll
 /home/apolT01-044/Documents/tienda/core/obj/Debug/net7.0/core.pdb
 /home/apolT01-044/Documents/tienda/core/obj/Debug/net7.0/ref/core.dll
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\bin\Debug\net7.0\core.deps.json
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\bin\Debug\net7.0\core.dll
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\bin\Debug\net7.0\core.pdb
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\core.AssemblyInfoInputs.cache
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\core.AssemblyInfo.cs
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\core.csproj.CoreCompileInputs.cache
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\core.dll
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\refint\core.dll
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\core.pdb
+C:\Users\APT01-039\Documents\Tienda-Netcore\core\obj\Debug\net7.0\ref\core.dll

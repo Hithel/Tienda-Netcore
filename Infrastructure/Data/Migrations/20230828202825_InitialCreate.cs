@@ -19,14 +19,14 @@ namespace Infrastructure.Data.Migrations
                 name: "Pais",
                 columns: table => new
                 {
-                    IdPais = table.Column<int>(type: "int", maxLength: 3, nullable: false)
+                    Id = table.Column<int>(type: "int", maxLength: 3, nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     NombrePais = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pais", x => x.IdPais);
+                    table.PrimaryKey("PK_Pais", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -52,17 +52,17 @@ namespace Infrastructure.Data.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "TipoPersonas",
+                name: "TipoPersona",
                 columns: table => new
                 {
-                    IdTipoPersona = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", maxLength: 3, nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Descripcion = table.Column<string>(type: "longtext", nullable: true)
+                    Descripcion = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TipoPersonas", x => x.IdTipoPersona);
+                    table.PrimaryKey("PK_TipoPersona", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -83,7 +83,7 @@ namespace Infrastructure.Data.Migrations
                         name: "FK_Estado_Pais_IdPaisFK",
                         column: x => x.IdPaisFK,
                         principalTable: "Pais",
-                        principalColumn: "IdPais",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -134,32 +134,33 @@ namespace Infrastructure.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Persona_TipoPersonas_IdTipoPersona",
+                        name: "FK_Persona_TipoPersona_IdTipoPersona",
                         column: x => x.IdTipoPersona,
-                        principalTable: "TipoPersonas",
-                        principalColumn: "IdTipoPersona",
+                        principalTable: "TipoPersona",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "ProductoPersona",
+                name: "ProductoPersonas",
                 columns: table => new
                 {
                     IdPersonaFk = table.Column<int>(type: "int", nullable: false),
-                    IdProductoFk = table.Column<int>(type: "int", nullable: false)
+                    IdProductoFk = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductoPersona", x => new { x.IdPersonaFk, x.IdProductoFk });
+                    table.PrimaryKey("PK_ProductoPersonas", x => new { x.IdPersonaFk, x.IdProductoFk });
                     table.ForeignKey(
-                        name: "FK_ProductoPersona_Persona_IdPersonaFk",
+                        name: "FK_ProductoPersonas_Persona_IdPersonaFk",
                         column: x => x.IdPersonaFk,
                         principalTable: "Persona",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ProductoPersona_Producto_IdProductoFk",
+                        name: "FK_ProductoPersonas_Producto_IdProductoFk",
                         column: x => x.IdProductoFk,
                         principalTable: "Producto",
                         principalColumn: "Id",
@@ -173,12 +174,6 @@ namespace Infrastructure.Data.Migrations
                 column: "IdPaisFK");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Persona_EmailPersona",
-                table: "Persona",
-                column: "EmailPersona",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Persona_IdRegionFK",
                 table: "Persona",
                 column: "IdRegionFK");
@@ -189,8 +184,8 @@ namespace Infrastructure.Data.Migrations
                 column: "IdTipoPersona");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductoPersona_IdProductoFk",
-                table: "ProductoPersona",
+                name: "IX_ProductoPersonas_IdProductoFk",
+                table: "ProductoPersonas",
                 column: "IdProductoFk");
 
             migrationBuilder.CreateIndex(
@@ -203,7 +198,7 @@ namespace Infrastructure.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ProductoPersona");
+                name: "ProductoPersonas");
 
             migrationBuilder.DropTable(
                 name: "Persona");
@@ -215,7 +210,7 @@ namespace Infrastructure.Data.Migrations
                 name: "Region");
 
             migrationBuilder.DropTable(
-                name: "TipoPersonas");
+                name: "TipoPersona");
 
             migrationBuilder.DropTable(
                 name: "Estado");

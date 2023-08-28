@@ -10,6 +10,6 @@ namespace core.Entities;
         public int StockMax { get; set; }
         public int Stock { get; set; }
         public double ValorVenta { get; set; }
-
+        public ICollection<Persona> Personas { get; set; } = new HashSet<Persona>();
         public ICollection<ProductoPersona> ProductoPersonas { get; set; }
     }
