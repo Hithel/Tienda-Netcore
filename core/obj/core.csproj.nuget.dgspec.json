@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\core.csproj": {}
+    "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\core.csproj": {
+    "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\core.csproj",
+        "projectUniqueName": "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\core.csproj",
         "projectName": "core",
-        "projectPath": "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\core.csproj",
-        "packagesPath": "C:\\Users\\APT01-039\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\obj\\",
+        "projectPath": "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\core.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT01-039\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

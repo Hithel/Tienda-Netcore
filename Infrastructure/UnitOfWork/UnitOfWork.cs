@@ -13,6 +13,8 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     private readonly APITiendaContext context;
     private PaisRepository _paises;
 
+    private EstadoRepository _estados;
+
     public UnitOfWork(APITiendaContext _context)
     {
         context = _context;
@@ -26,6 +28,17 @@ public class UnitOfWork : IUnitOfWork, IDisposable
                 _paises = new PaisRepository(context);
             }
             return _paises;
+        }
+    }
+
+    public IEstado Estados
+    {
+        get{
+            if(_estados == null)
+            {
+                _estados = new EstadoRepository(context);
+            }
+            return _estados;
         }
     }
 

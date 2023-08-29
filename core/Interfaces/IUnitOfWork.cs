@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace core.Interfaces
-{
+namespace core.Interfaces;
     public interface IUnitOfWork
     {
         IPais Paises { get; }
 
-        // ITipoPersona TipoPersonas{ get; }
+        IEstado Estados{ get; }
 
         Task<int> SaveAsync();
     }
-}
