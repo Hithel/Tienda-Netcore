@@ -139,3 +139,5 @@ C:\Users\ADMIN\Documents\Tienda-Netcore\API\obj\Debug\net7.0\refint\API.dll
 C:\Users\ADMIN\Documents\Tienda-Netcore\API\obj\Debug\net7.0\API.pdb
 C:\Users\ADMIN\Documents\Tienda-Netcore\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\ADMIN\Documents\Tienda-Netcore\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\APT01-039\Documents\Tienda-Netcore\API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\APT01-039\Documents\Tienda-Netcore\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

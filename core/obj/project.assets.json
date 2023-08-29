@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\APT01-039\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\core.csproj",
+      "projectUniqueName": "c:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\core.csproj",
       "projectName": "core",
-      "projectPath": "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\core.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\core\\obj\\",
+      "projectPath": "c:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\core.csproj",
+      "packagesPath": "C:\\Users\\APT01-039\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\APT01-039\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
