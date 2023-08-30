@@ -1616,19 +1616,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APT01-039\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\APT01-039\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\API\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APT01-039\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1640,8 +1640,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\APT01-039\\Documents\\Tienda-Netcore\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\Documents\\Tienda-Netcore\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
